@@ -1,5 +1,5 @@
 ---
-name: markitdown
+name: markitdown-skill
 description: "Use when converting PDFs, DOCX, PPTX, XLSX, TXT, HTML, images, or audio files to Markdown with the local markitdown CLI or wrapper."
 ---
 
