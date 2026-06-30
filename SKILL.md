@@ -53,6 +53,7 @@ After conversion, especially for Japanese slide-based PDFs or OCR-heavy document
 The goal is a "clean" but "complete" Markdown document, not a summary.
 
 ### Refinement Guardrails
+- **Do not use automated scripts (e.g., Python regex scripts) for refinement.** The AI agent must directly generate and output the refined markdown (e.g., via `write_to_file`) to ensure nuanced text flow formatting.
 - Do not run broad regex-based cleanup across an entire corpus if it can rewrite structured content by accident.
 - Do not batch-convert a whole folder into refined Markdown unless each document has been spot-checked against its raw counterpart first.
 - Do not infer or invent structure from OCR fragments, merged table cells, or broken equations.
