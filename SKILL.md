@@ -41,6 +41,8 @@ Use the local repository at `~/markitdown` and the wrapper script located in the
 ## Post-processing and Refinement
 After conversion, especially for Japanese slide-based PDFs or OCR-heavy documents, the AI agent is responsible for refining the content. **CRITICAL: Preservation of information is the highest priority.**
 
+**MANDATORY STEP**: You MUST proactively create the refined Markdown file (e.g., `filename_refined.md`) alongside the raw conversion. Do not wait for the user to explicitly ask for the refined version. If the user provides multiple files, you may process and refine them sequentially to ensure quality, but you must not refuse to create the refined files simply because they were provided in a batch.
+
 1. **NO Information Loss**: Do NOT summarize or omit any text, terminology, numbers, or names. Every piece of information from the raw conversion must be present in the refined version.
 2. **Formatting Only**: Focus on fixing layout issues, not changing content.
 3. **Remove Artifacts**: Clean up form feeds (`\f`) and standalone page numbers only when they are clearly page markers; do not remove dates, slide titles, section labels, or other meaningful standalone lines.
